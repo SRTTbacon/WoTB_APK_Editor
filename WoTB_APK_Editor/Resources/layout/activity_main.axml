@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <Button
+        android:text="apkファイルを展開する"
+        android:layout_width="247.5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/APK_Tenkai_B"
+        android:textSize="30px"
+        android:layout_marginLeft="0px" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Wait_P"
+        android:layout_marginLeft="80px" />
+    <TextView
+        android:text="ファイルを展開しています..."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:id="@+id/Wait_Text"
+        android:layout_marginLeft="250px"
+        android:textSize="40px"
+        android:layout_marginRight="51.0dp" />
+    <Button
+        android:text="Modファイル(.zip)を選択"
+        android:layout_width="215.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Zip_Select_B"
+        android:layout_marginLeft="150px"
+        android:textSize="30px" />
+    <Button
+        android:text="ヘルプ"
+        android:layout_width="69.5dp"
+        android:layout_height="38.5dp"
+        android:id="@+id/Zip_Help_B"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="-147px" />
+    <Button
+        android:text="艦これ音声Mod"
+        android:layout_width="350px"
+        android:layout_height="wrap_content"
+        android:id="@+id/Kankore_B"
+        android:layout_marginLeft="300px"
+        android:textSize="30px" />
+    <Button
+        android:text="サンプル音声を変更"
+        android:layout_width="350px"
+        android:layout_height="wrap_content"
+        android:id="@+id/Change_Sample_Voice_B"
+        android:layout_marginLeft="300px"
+        android:textSize="30px" />
+    <Button
+        android:text="サンプル"
+        android:layout_width="93.5dp"
+        android:layout_height="39.0dp"
+        android:layout_marginLeft="600px"
+        android:layout_marginTop="-100px"
+        android:id="@+id/Sample_Voice_B" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="500px"
+        android:layout_height="50px"
+        android:id="@+id/Kankore_P"
+        android:layout_marginLeft="225px" />
+    <Button
+        android:text="適応"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:id="@+id/Test_B"
+        android:textSize="40px"
+        android:layout_marginLeft="280px"
+        android:layout_marginTop="200px" />
+    <Button
+        android:text="デフォルトに戻す"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:id="@+id/Backup_B"
+        android:textSize="35px"
+        android:layout_marginLeft="280px"
+        android:layout_marginTop="50px" />
+    <Button
+        android:text="戦闘BGMの変更"
+        android:layout_marginLeft="280px"
+        android:layout_marginTop="50px"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:id="@+id/BGM_B" />
+</LinearLayout>

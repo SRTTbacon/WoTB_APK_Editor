@@ -1,0 +1,47 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:text="戻る"
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/BGM_Exit_B" />
+    <Button
+        android:text="TWO STEPS FROM HEll"
+        android:layout_width="235.5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BGM_Select_B"
+        android:layout_marginLeft="175px" />
+    <Button
+        android:text="サンプル"
+        android:layout_width="100.5dp"
+        android:layout_height="42.5dp"
+        android:layout_marginLeft="300px"
+        android:layout_marginTop="-20px"
+        android:id="@+id/Sample_BGM_B" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="235.5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="175px"
+        android:id="@+id/Download_Progress" />
+    <Button
+        android:text="サンプルBGMを変更"
+        android:layout_width="169.5dp"
+        android:layout_marginLeft="225px"
+        android:layout_height="38.5dp"
+        android:id="@+id/Change_Sample_BGM_B" />
+    <Button
+        android:text="BGMModファイル(.zip)を選択"
+        android:layout_width="301.0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="115px"
+        android:layout_marginTop="50px"
+        android:id="@+id/Select_BGM_File_B" />
+
+</LinearLayout>
