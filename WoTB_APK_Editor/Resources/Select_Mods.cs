@@ -67,6 +67,8 @@ namespace WoTB_APK_Editor
             {
                 if (Directory.Exists(Download_Path + "/Download_Mods/Select_Mod"))
                 {
+                    bool Sounds_OK = false;
+                    bool ingame_voice_OK = false;
                     IEnumerable<string> files = Directory.EnumerateFiles(Download_Path + "/Download_Mods/Select_Mod", "*", SearchOption.AllDirectories);
                     foreach (string f in files)
                     {
@@ -84,6 +86,7 @@ namespace WoTB_APK_Editor
                         {
                             if (File_Path.Contains("/sounds.yaml"))
                             {
+                                Sounds_OK = true;
                                 File.Copy(f, Download_Path + "/WoTB_Files/assets/Data/sounds.yaml", true);
                             }
                             else if (File_Path.Contains("/sfx_high.yaml") || File_Path.Contains("/sfx_low.yaml"))
@@ -102,7 +105,15 @@ namespace WoTB_APK_Editor
                                     File.Copy(f, Download_Path + "/WoTB_Files/assets/Data/Sfx/" + File_Name_Path, true);
                                 }
                             }
+                            if (File_Path.Contains("/ingame_voice"))
+                            {
+                                ingame_voice_OK = true;
+                            }
                         }
+                    }
+                    if (ingame_voice_OK == true && Sounds_OK == false)
+                    {
+                        File.Copy(Download_Path + "/Backup/sounds.yaml", Download_Path + "/WoTB_Files/assets/Data/sounds.yaml", true);
                     }
                     Kankore_Voice_Mod = true;
                     Toast.MakeText(this, "完了しました。", ToastLength.Short).Show();

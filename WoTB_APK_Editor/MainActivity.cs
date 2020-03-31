@@ -287,6 +287,7 @@ namespace WoTB_APK_Editor
                     Sample_Voice_B.Visibility = Android.Views.ViewStates.Visible;
                     BGM_B.Visibility = Android.Views.ViewStates.Visible;
                     Change_Sample_Voice_B.Visibility = Android.Views.ViewStates.Visible;
+                    File.Copy(Download_Path + "/WoTB_Files/assets/Data/sounds.yaml", Download_Path + "/Backup/sounds.yaml", true);
                     Toast.MakeText(this, "展開しました。", ToastLength.Short).Show();
                     break;
                 }
